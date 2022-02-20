@@ -1,0 +1,32 @@
+.advantage__list {
+  display: flex;
+}
+.advantage__item {
+  width: calc((100% - 3 * 30px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.advantage__pic-wrap {
+  @include flex-centered();
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--section-background-color);
+  border-radius: 4px;
+}
+
+.advantage__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantage__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+}
